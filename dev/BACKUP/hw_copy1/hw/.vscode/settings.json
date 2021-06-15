@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "cstddef": "cpp",
+        "memory_linear.h": "c"
+    }
+}

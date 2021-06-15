@@ -1,0 +1,30 @@
+
+#############################################################################
+#############################################################################
+			DEBUG INFO
+#############################################################################
+#############################################################################
+
+
+Steps to start debug:
+
+
+1) in terminal write <make start-server>
+2) type: telnet localhost 4444
+	* reset halt
+	* flash write_image erase bin/main.hex
+	* reset
+	* exit
+3)type: arm-none-eabi-gdb bin/main.elf
+	* target remote localhost:3333
+	* monitor reset halt
+
+For further information use the following links:
+	https://eax.me/openocd/
+	https://ardupilot.org/dev/docs/debugging-with-gdb-on-stm32.html
+	https://stackoverflow.com/questions/10115540/gdb-split-view-with-code
+
+
+
+#############################################################################
+#############################################################################

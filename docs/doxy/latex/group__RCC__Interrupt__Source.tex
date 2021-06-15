@@ -1,0 +1,57 @@
+\hypertarget{group__RCC__Interrupt__Source}{}\doxysection{R\+C\+C\+\_\+\+Interrupt\+\_\+\+Source}
+\label{group__RCC__Interrupt__Source}\index{RCC\_Interrupt\_Source@{RCC\_Interrupt\_Source}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga2b4ef277c1b71f96e0bef4b9a72fca94}\label{group__RCC__Interrupt__Source_ga2b4ef277c1b71f96e0bef4b9a72fca94}} 
+\#define {\bfseries R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+I\+R\+DY}~((uint8\+\_\+t)0x01)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_gad6b6e78a426850f595ef180d292a673d}\label{group__RCC__Interrupt__Source_gad6b6e78a426850f595ef180d292a673d}} 
+\#define {\bfseries R\+C\+C\+\_\+\+I\+T\+\_\+\+L\+S\+E\+R\+DY}~((uint8\+\_\+t)0x02)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga69637e51b71f73f519c8c0a0613d042f}\label{group__RCC__Interrupt__Source_ga69637e51b71f73f519c8c0a0613d042f}} 
+\#define {\bfseries R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+I\+R\+DY}~((uint8\+\_\+t)0x04)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_gad13eaede352bca59611e6cae68665866}\label{group__RCC__Interrupt__Source_gad13eaede352bca59611e6cae68665866}} 
+\#define {\bfseries R\+C\+C\+\_\+\+I\+T\+\_\+\+H\+S\+E\+R\+DY}~((uint8\+\_\+t)0x08)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga68d48e7811fb58f2649dce6cf0d823d9}\label{group__RCC__Interrupt__Source_ga68d48e7811fb58f2649dce6cf0d823d9}} 
+\#define {\bfseries R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+R\+DY}~((uint8\+\_\+t)0x10)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga6468ff3bad854272cf1120ffbf69b7ac}\label{group__RCC__Interrupt__Source_ga6468ff3bad854272cf1120ffbf69b7ac}} 
+\#define {\bfseries R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+I2\+S\+R\+DY}~((uint8\+\_\+t)0x20)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga4f9e4c71ae81585c30cf0a87bc1d8cca}\label{group__RCC__Interrupt__Source_ga4f9e4c71ae81585c30cf0a87bc1d8cca}} 
+\#define {\bfseries R\+C\+C\+\_\+\+I\+T\+\_\+\+P\+L\+L\+S\+A\+I\+R\+DY}~((uint8\+\_\+t)0x40)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga9bb34a4912d2084dc1c0834eb53aa7a3}\label{group__RCC__Interrupt__Source_ga9bb34a4912d2084dc1c0834eb53aa7a3}} 
+\#define {\bfseries R\+C\+C\+\_\+\+I\+T\+\_\+\+C\+SS}~((uint8\+\_\+t)0x80)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga710d72ccf88ddbec09b033c81a571a83}\label{group__RCC__Interrupt__Source_ga710d72ccf88ddbec09b033c81a571a83}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+IT}(IT)~((((IT) \& (uint8\+\_\+t)0x80) == 0x00) \&\& ((IT) != 0x00))
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT}(IT)
+\item 
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga8374741e47d696accd1a72647650ba63}\label{group__RCC__Interrupt__Source_ga8374741e47d696accd1a72647650ba63}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+IT}(IT)~((IT) != 0x00)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__RCC__Interrupt__Source_ga7a1b771d6d9c2d8346ab58a1f046f6a6}\label{group__RCC__Interrupt__Source_ga7a1b771d6d9c2d8346ab58a1f046f6a6}} 
+\index{RCC\_Interrupt\_Source@{RCC\_Interrupt\_Source}!IS\_RCC\_GET\_IT@{IS\_RCC\_GET\_IT}}
+\index{IS\_RCC\_GET\_IT@{IS\_RCC\_GET\_IT}!RCC\_Interrupt\_Source@{RCC\_Interrupt\_Source}}
+\doxysubsubsection{\texorpdfstring{IS\_RCC\_GET\_IT}{IS\_RCC\_GET\_IT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+R\+C\+C\+\_\+\+G\+E\+T\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{IT }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                           (((IT) == RCC\_IT\_LSIRDY) || ((IT) == RCC\_IT\_LSERDY) || \(\backslash\)}
+\DoxyCodeLine{                           ((IT) == RCC\_IT\_HSIRDY) || ((IT) == RCC\_IT\_HSERDY) || \(\backslash\)}
+\DoxyCodeLine{                           ((IT) == RCC\_IT\_PLLRDY) || ((IT) == RCC\_IT\_CSS) || \(\backslash\)}
+\DoxyCodeLine{                           ((IT) == RCC\_IT\_PLLSAIRDY) || ((IT) == RCC\_IT\_PLLI2SRDY))}
+
+\end{DoxyCode}

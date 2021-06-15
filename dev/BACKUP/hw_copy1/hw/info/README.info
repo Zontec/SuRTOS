@@ -1,0 +1,21 @@
+
+##############################################################
+##############################################################
+                         HELP
+##############################################################
+##############################################################
+
+
+This is an info file
+
+make <option>:
+	* clean         - clear the bin folder out of the binary files
+	* flash         - burns the chip with stm32programmer
+	* flash-dbg     - burns an .elf file to the board
+	* start-server	- starts first to begin debug mode
+	* debug-info 	- info how to perform debugging
+
+
+
+##############################################################
+##############################################################

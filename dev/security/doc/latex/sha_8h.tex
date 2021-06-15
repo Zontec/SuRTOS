@@ -1,0 +1,85 @@
+\hypertarget{sha_8h}{}\doxysection{include/sha.h File Reference}
+\label{sha_8h}\index{include/sha.h@{include/sha.h}}
+
+
+S\+HA algorithm header file.  
+
+
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sha_8h_a050147ad7882bf24d1ce6d304e4d8410}\label{sha_8h_a050147ad7882bf24d1ce6d304e4d8410}} 
+typedef enum sha\+\_\+type\+\_\+e {\bfseries sha\+\_\+type\+\_\+e}
+\item 
+\mbox{\Hypertarget{sha_8h_a054b3877d89adb4679ffd45c4c3a8100}\label{sha_8h_a054b3877d89adb4679ffd45c4c3a8100}} 
+typedef enum sha\+\_\+status\+\_\+e {\bfseries sha\+\_\+status\+\_\+e}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sha_8h_aad3e9f8d8c5fb7f8143e6dd5ea4d8c74}\label{sha_8h_aad3e9f8d8c5fb7f8143e6dd5ea4d8c74}} 
+enum {\bfseries sha\+\_\+type\+\_\+e} \{ {\bfseries S\+H\+A\+\_\+1} = 0, 
+{\bfseries S\+H\+A\+\_\+256} = 1, 
+{\bfseries S\+H\+A\+\_\+384} = 2, 
+{\bfseries S\+H\+A\+\_\+512} = 3
+ \}
+\item 
+\mbox{\Hypertarget{sha_8h_a1a5a815970b0f31067d5e6f4b3202582}\label{sha_8h_a1a5a815970b0f31067d5e6f4b3202582}} 
+enum {\bfseries sha\+\_\+status\+\_\+e} \{ {\bfseries S\+H\+A\+\_\+\+OK} = 0, 
+{\bfseries S\+H\+A\+\_\+\+F\+A\+IL} = 1, 
+{\bfseries S\+H\+A\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+H\+A\+S\+H\+\_\+\+T\+Y\+PE} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{sha_8h_a33f6de180f3b96fb55db79931444eaa7}{sha}} (sha\+\_\+type\+\_\+e sha\+\_\+type, const uint8\+\_\+t $\ast$message, const uint32\+\_\+t message\+\_\+len, uint8\+\_\+t $\ast$out)
+\begin{DoxyCompactList}\small\item\em Secured Hash Algortihm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sha_8h_a341dcba42ea8958ae4c4acc7b0865aed}\label{sha_8h_a341dcba42ea8958ae4c4acc7b0865aed}} 
+uint32\+\_\+t {\bfseries get\+\_\+sha\+\_\+hash\+\_\+size} (sha\+\_\+type\+\_\+e sha\+\_\+type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+S\+HA algorithm header file. 
+
+\begin{DoxyAuthor}{Author}
+Zontec 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021.\+04.\+04
+\end{DoxyDate}
+File specifises interface for using secured hash algorithm 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sha_8h_a33f6de180f3b96fb55db79931444eaa7}\label{sha_8h_a33f6de180f3b96fb55db79931444eaa7}} 
+\index{sha.h@{sha.h}!sha@{sha}}
+\index{sha@{sha}!sha.h@{sha.h}}
+\doxysubsubsection{\texorpdfstring{sha()}{sha()}}
+{\footnotesize\ttfamily uint32\+\_\+t sha (\begin{DoxyParamCaption}\item[{sha\+\_\+type\+\_\+e}]{sha\+\_\+type,  }\item[{const uint8\+\_\+t $\ast$}]{message,  }\item[{const uint32\+\_\+t}]{message\+\_\+len,  }\item[{uint8\+\_\+t $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+Secured Hash Algortihm. 
+
+\begin{DoxyWarning}{Warning}
+Not complitly finished
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sha\+\_\+type} & Used to specify type of Secure Hash Algorithm \\
+\hline
+\mbox{\texttt{ in}}  & {\em message} & Data to be hashed \\
+\hline
+\mbox{\texttt{ in}}  & {\em message\+\_\+len} & Length of data to be hashed \\
+\hline
+\mbox{\texttt{ out}}  & {\em out} & Hashed data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sha\+\_\+status\+\_\+e 
+\end{DoxyReturn}

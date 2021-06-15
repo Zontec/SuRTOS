@@ -1,0 +1,25 @@
+
+OBJS = $(addsuffix .o, $(basename $(SRCS)))
+
+CFLAGS += $(addprefix -I, $(INCLUDES))
+CFLAGS += $(addprefix -D, $(SYS))
+LDFLAGS += $(addprefix -I, $(INCLUDES))
+ASMFLAGS += $(addprefix -I, $(INCLUDES))
+
+%.o: %.S
+	@mkdir -p $(BUILD_DIR)
+	@mkdir -p $(dir $@)
+	@$(ASM) $(ASMFLAGS) -c $< -o $(BUILD_DIR)/$@
+	@echo CC -c $(notdir $<)
+
+%.o: %.c
+	@mkdir -p $(BUILD_DIR)
+	@mkdir -p $(dir $@)
+	@$(CC) $(CFLAGS) -c $< -o $(BUILD_DIR)/$@
+	@echo CC -c $(notdir $<)
+
+
+build: linker.ld $(OBJS)
+	@$(LD) -T $< $(LDFLAGS) $(addprefix $(BUILD_DIR)/, $(OBJS)) -o $(BUILD_DIR)/$(PROJECT).elf
+	@echo "Build success!"
+

@@ -1,0 +1,6 @@
+########################### CODE-STYLE ###########################
+
+Project uses classic ANCI C99 code style
+https://www.doc.ic.ac.uk/lab/cplus/cstyle.html
+
+##################################################################

@@ -1,0 +1,9 @@
+MCU ?= atmega328p
+FMCU ?= m328p
+PORT ?= ttyUSB0
+PROG ?= arduino
+SPEED ?= 57600 
+
+FLASH_TOOL ?= avrdude
+FLASH_TOOL_FLAGS ?= -P/dev/$(PORT) -F -b$(SPEED) -c$(PROG) -p$(FMCU)
+

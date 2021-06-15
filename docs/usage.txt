@@ -1,0 +1,11 @@
+########################### USAGE ###########################
+
+Project contains a set of examples for different platforms.
+You can find them in "examples" folder.
+
+To find out how create projects using "micros" go to "empty project" in "examples"
+directory.
+
+Any questions: micros_development@gmail.com
+#############################################################
+

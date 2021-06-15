@@ -1,0 +1,13 @@
+.PHONY: install clean rebuild flash
+
+install:
+	@echo "install tools"
+
+rebuild: clean
+	@make $(addprefix -, $(MAKEFLAGS)) build
+
+clean:
+	@rm -rf $(BUILD_DIR)
+
+flash:
+	$(FLASH_TOOL) $(FLASH_TOOL_FLAGS) $(FLASH_TOOL_IMAGE) $(FLASH_TOOL_EXTRA_PARAMS)  

@@ -1,0 +1,120 @@
+\hypertarget{stm32f4xx__gpio_8c}{}\doxysection{hal/stm32f407/cmsis/stm32f4xx\+\_\+gpio.c File Reference}
+\label{stm32f4xx__gpio_8c}\index{hal/stm32f407/cmsis/stm32f4xx\_gpio.c@{hal/stm32f407/cmsis/stm32f4xx\_gpio.c}}
+
+
+This file provides firmware functions to manage the following functionalities of the G\+P\+IO peripheral\+: ~\newline
+  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+rcc.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__GPIO__Group1_gaa60bdf3182c44b5fa818f237042f52ee}{G\+P\+I\+O\+\_\+\+De\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox)
+\begin{DoxyCompactList}\small\item\em De-\/initializes the G\+P\+I\+Ox peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group1_ga71abf9404261370d03cca449b88d3a65}{G\+P\+I\+O\+\_\+\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, \mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} $\ast$G\+P\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the G\+P\+I\+Ox peripheral according to the specified parameters in the G\+P\+I\+O\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group1_gab28de41278e7f8c63d0851e2733b10df}{G\+P\+I\+O\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} $\ast$G\+P\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each G\+P\+I\+O\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group1_gad2f2e615928c69fd0d8c641a7cedaafc}{G\+P\+I\+O\+\_\+\+Pin\+Lock\+Config}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Locks G\+P\+IO Pins configuration registers. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__GPIO__Group2_ga98772ef6b639b3fa06c8ae5ba28d3aaa}{G\+P\+I\+O\+\_\+\+Read\+Input\+Data\+Bit}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Reads the specified input port pin. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__GPIO__Group2_ga139a33adc8409288e9f193bbebb5a0f7}{G\+P\+I\+O\+\_\+\+Read\+Input\+Data}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox)
+\begin{DoxyCompactList}\small\item\em Reads the specified G\+P\+IO input data port. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__GPIO__Group2_ga138270f8695b105b7c6ed405792919c1}{G\+P\+I\+O\+\_\+\+Read\+Output\+Data\+Bit}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Reads the specified output data port bit. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__GPIO__Group2_gaf8938a34280b7dc3e39872a7c17bb323}{G\+P\+I\+O\+\_\+\+Read\+Output\+Data}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox)
+\begin{DoxyCompactList}\small\item\em Reads the specified G\+P\+IO output data port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group2_ga9e1352eed7c6620e18af2d86f6b6ff8e}{G\+P\+I\+O\+\_\+\+Set\+Bits}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Sets the selected data port bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group2_ga6fcd35b207a66608dd2c9d7de9247dc8}{G\+P\+I\+O\+\_\+\+Reset\+Bits}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Clears the selected data port bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group2_ga8f7b237fd744d9f7456fbe0da47a9b80}{G\+P\+I\+O\+\_\+\+Write\+Bit}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin, \mbox{\hyperlink{group__GPIO_ga176130b21c0e719121470a6042d4cf19}{Bit\+Action}} Bit\+Val)
+\begin{DoxyCompactList}\small\item\em Sets or clears the selected data port bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group2_gaa925f19c8547a00c7a0c269a84873bf9}{G\+P\+I\+O\+\_\+\+Write}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t Port\+Val)
+\begin{DoxyCompactList}\small\item\em Writes data to the specified G\+P\+IO data port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group2_gac1b837c66258872740d5f89f23549ab1}{G\+P\+I\+O\+\_\+\+Toggle\+Bits}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Toggles the specified G\+P\+IO pins.. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group3_ga0a77617a322562ae84f8d72486032c5d}{G\+P\+I\+O\+\_\+\+Pin\+A\+F\+Config}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin\+Source, uint8\+\_\+t G\+P\+I\+O\+\_\+\+AF)
+\begin{DoxyCompactList}\small\item\em Changes the mapping of the specified pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file provides firmware functions to manage the following functionalities of the G\+P\+IO peripheral\+: ~\newline
+ 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+3.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08-\/November-\/2013
+\begin{DoxyItemize}
+\item Initialization and Configuration
+\item G\+P\+IO Read and Write
+\item G\+P\+IO Alternate functions configuration
+\end{DoxyItemize}
+\end{DoxyDate}
+\begin{DoxyVerb} ===============================================================================
+                      ##### How to use this driver #####
+ ===============================================================================       
+ [..]             
+   (#) Enable the GPIO AHB clock using the following function
+       RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+               
+   (#) Configure the GPIO pin(s) using GPIO_Init()
+       Four possible configuration are available for each pin:
+       (++) Input: Floating, Pull-up, Pull-down.
+       (++) Output: Push-Pull (Pull-up, Pull-down or no Pull)
+            Open Drain (Pull-up, Pull-down or no Pull). In output mode, the speed 
+            is configurable: 2 MHz, 25 MHz, 50 MHz or 100 MHz.
+       (++) Alternate Function: Push-Pull (Pull-up, Pull-down or no Pull) Open 
+            Drain (Pull-up, Pull-down or no Pull).
+       (++) Analog: required mode when a pin is to be used as ADC channel or DAC 
+            output.
+   
+   (#) Peripherals alternate function:
+       (++) For ADC and DAC, configure the desired pin in analog mode using 
+            GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AN;
+            (+++) For other peripherals (TIM, USART...):
+            (+++) Connect the pin to the desired peripherals' Alternate 
+                     Function (AF) using GPIO_PinAFConfig() function
+            (+++) Configure the desired pin in alternate function mode using
+                     GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AF
+            (+++) Select the type, pull-up/pull-down and output speed via 
+                     GPIO_PuPd, GPIO_OType and GPIO_Speed members
+            (+++) Call GPIO_Init() function
+          
+   (#) To get the level of a pin configured in input mode use GPIO_ReadInputDataBit()
+            
+   (#) To set/reset the level of a pin configured in output mode use 
+       GPIO_SetBits()/GPIO_ResetBits()
+                 
+   (#) During and just after reset, the alternate functions are not 
+       active and the GPIO pins are configured in input floating mode (except JTAG
+       pins).
+  
+   (#) The LSE oscillator pins OSC32_IN and OSC32_OUT can be used as general purpose 
+       (PC14 and PC15, respectively) when the LSE oscillator is off. The LSE has 
+       priority over the GPIO function.
+  
+   (#) The HSE oscillator pins OSC_IN/OSC_OUT can be used as 
+       general purpose PH0 and PH1, respectively, when the HSE oscillator is off. 
+       The HSE has priority over the GPIO function.\end{DoxyVerb}
+ ~\newline
+
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2013 S\+T\+Microelectronics\end{center} }
+
+Licensed under M\+C\+D-\/\+ST Liberty SW License Agreement V2, (the \char`\"{}\+License\char`\"{}); You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: \begin{DoxyVerb}   http://www.st.com/software_license_agreement_liberty_v2
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

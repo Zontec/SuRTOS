@@ -1,0 +1,3 @@
+
+SRC += $(fullpath board.c)
+INCLUDES += $(fullpath board.h)

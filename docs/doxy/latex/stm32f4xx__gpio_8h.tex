@@ -1,0 +1,302 @@
+\hypertarget{stm32f4xx__gpio_8h}{}\doxysection{hal/stm32f407/cmsis/stm32f4xx\+\_\+gpio.h File Reference}
+\label{stm32f4xx__gpio_8h}\index{hal/stm32f407/cmsis/stm32f4xx\_gpio.h@{hal/stm32f407/cmsis/stm32f4xx\_gpio.h}}
+
+
+This file contains all the functions prototypes for the G\+P\+IO firmware library.  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em G\+P\+IO Init structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+A\+L\+L\+\_\+\+P\+E\+R\+I\+PH}(P\+E\+R\+I\+PH)
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+O\+T\+Y\+PE}(O\+T\+Y\+PE)~(((O\+T\+Y\+PE) == G\+P\+I\+O\+\_\+\+O\+Type\+\_\+\+PP) $\vert$$\vert$ ((O\+T\+Y\+PE) == G\+P\+I\+O\+\_\+\+O\+Type\+\_\+\+OD))
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Speed\+\_\+2\+M\+Hz}~\mbox{\hyperlink{group__GPIO_gga062ad92b67b4a1f301c161022cf3ba8ea898ec2036718768d42e79afcb95ce5bf}{G\+P\+I\+O\+\_\+\+Low\+\_\+\+Speed}}
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Speed\+\_\+25\+M\+Hz}~\mbox{\hyperlink{group__GPIO_gga062ad92b67b4a1f301c161022cf3ba8eaeed9485cfebba319947e3ef495e44371}{G\+P\+I\+O\+\_\+\+Medium\+\_\+\+Speed}}
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Speed\+\_\+50\+M\+Hz}~\mbox{\hyperlink{group__GPIO_gga062ad92b67b4a1f301c161022cf3ba8ea91731d092dedee851773cea4698662e6}{G\+P\+I\+O\+\_\+\+Fast\+\_\+\+Speed}}
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Speed\+\_\+100\+M\+Hz}~\mbox{\hyperlink{group__GPIO_gga062ad92b67b4a1f301c161022cf3ba8ea5b6a7186d45e9daebfc03b7a309162e8}{G\+P\+I\+O\+\_\+\+High\+\_\+\+Speed}}
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+S\+P\+E\+ED}(S\+P\+E\+ED)
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+P\+U\+PD}(P\+U\+PD)
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+B\+I\+T\+\_\+\+A\+C\+T\+I\+ON}(A\+C\+T\+I\+ON)~(((A\+C\+T\+I\+ON) == Bit\+\_\+\+R\+E\+S\+ET) $\vert$$\vert$ ((A\+C\+T\+I\+ON) == Bit\+\_\+\+S\+ET))
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+0}~((uint16\+\_\+t)0x0001)  /$\ast$ Pin 0 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+1}~((uint16\+\_\+t)0x0002)  /$\ast$ Pin 1 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+2}~((uint16\+\_\+t)0x0004)  /$\ast$ Pin 2 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+3}~((uint16\+\_\+t)0x0008)  /$\ast$ Pin 3 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+4}~((uint16\+\_\+t)0x0010)  /$\ast$ Pin 4 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+5}~((uint16\+\_\+t)0x0020)  /$\ast$ Pin 5 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+6}~((uint16\+\_\+t)0x0040)  /$\ast$ Pin 6 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+7}~((uint16\+\_\+t)0x0080)  /$\ast$ Pin 7 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+8}~((uint16\+\_\+t)0x0100)  /$\ast$ Pin 8 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+9}~((uint16\+\_\+t)0x0200)  /$\ast$ Pin 9 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+10}~((uint16\+\_\+t)0x0400)  /$\ast$ Pin 10 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+11}~((uint16\+\_\+t)0x0800)  /$\ast$ Pin 11 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+12}~((uint16\+\_\+t)0x1000)  /$\ast$ Pin 12 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+13}~((uint16\+\_\+t)0x2000)  /$\ast$ Pin 13 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+14}~((uint16\+\_\+t)0x4000)  /$\ast$ Pin 14 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+15}~((uint16\+\_\+t)0x8000)  /$\ast$ Pin 15 selected $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+\_\+\+All}~((uint16\+\_\+t)0x\+F\+F\+FF)  /$\ast$ All pins selected $\ast$/
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+P\+IN}(P\+IN)~((((P\+IN) \& (uint16\+\_\+t)0x00) == 0x00) \&\& ((P\+IN) != (uint16\+\_\+t)0x00))
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+E\+T\+\_\+\+G\+P\+I\+O\+\_\+\+P\+IN}(P\+IN)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source0}~((uint8\+\_\+t)0x00)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source1}~((uint8\+\_\+t)0x01)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source2}~((uint8\+\_\+t)0x02)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source3}~((uint8\+\_\+t)0x03)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source4}~((uint8\+\_\+t)0x04)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source5}~((uint8\+\_\+t)0x05)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source6}~((uint8\+\_\+t)0x06)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source7}~((uint8\+\_\+t)0x07)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source8}~((uint8\+\_\+t)0x08)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source9}~((uint8\+\_\+t)0x09)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source10}~((uint8\+\_\+t)0x0A)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source11}~((uint8\+\_\+t)0x0B)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source12}~((uint8\+\_\+t)0x0C)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source13}~((uint8\+\_\+t)0x0D)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source14}~((uint8\+\_\+t)0x0E)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Pin\+Source15}~((uint8\+\_\+t)0x0F)
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+S\+O\+U\+R\+CE}(P\+I\+N\+S\+O\+U\+R\+CE)
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_ga93071f0121fab9f8f13e59c612ed6291}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+R\+T\+C\+\_\+50\+Hz}}~((uint8\+\_\+t)0x00)  /$\ast$ R\+T\+C\+\_\+50\+Hz Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 0 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+M\+CO}~((uint8\+\_\+t)0x00)  /$\ast$ M\+CO (M\+C\+O1 and M\+C\+O2) Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+A\+M\+P\+ER}~((uint8\+\_\+t)0x00)  /$\ast$ T\+A\+M\+P\+ER (T\+A\+M\+P\+E\+R\+\_\+1 and T\+A\+M\+P\+E\+R\+\_\+2) Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+WJ}~((uint8\+\_\+t)0x00)  /$\ast$ S\+WJ (S\+WD and J\+T\+AG) Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+R\+A\+CE}~((uint8\+\_\+t)0x00)  /$\ast$ T\+R\+A\+CE Alternate Function mapping $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_ga9a65573a3d8684febe1fda5c6cd8c992}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M1}}~((uint8\+\_\+t)0x01)  /$\ast$ T\+I\+M1 Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 1 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M2}~((uint8\+\_\+t)0x01)  /$\ast$ T\+I\+M2 Alternate Function mapping $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_ga8c6bda0c56abc29eef7709b52d9d3e0d}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M3}}~((uint8\+\_\+t)0x02)  /$\ast$ T\+I\+M3 Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 2 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M4}~((uint8\+\_\+t)0x02)  /$\ast$ T\+I\+M4 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M5}~((uint8\+\_\+t)0x02)  /$\ast$ T\+I\+M5 Alternate Function mapping $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gaf7562d5cf5d33dbc7b7c69df63182583}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M8}}~((uint8\+\_\+t)0x03)  /$\ast$ T\+I\+M8 Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 3 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M9}~((uint8\+\_\+t)0x03)  /$\ast$ T\+I\+M9 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M10}~((uint8\+\_\+t)0x03)  /$\ast$ T\+I\+M10 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M11}~((uint8\+\_\+t)0x03)  /$\ast$ T\+I\+M11 Alternate Function mapping $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gaa246f87c460c4bb4036b8ab39e0220f1}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+I2\+C1}}~((uint8\+\_\+t)0x04)  /$\ast$ I2\+C1 Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 4 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+I2\+C2}~((uint8\+\_\+t)0x04)  /$\ast$ I2\+C2 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+I2\+C3}~((uint8\+\_\+t)0x04)  /$\ast$ I2\+C3 Alternate Function mapping $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_ga7804aaf9275dbb5502312729a76d13be}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+P\+I1}}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I1 Alternate Function mapping      $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 5 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+P\+I2}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I2/I2\+S2 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+P\+I4}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I4 Alternate Function mapping      $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+P\+I5}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I5 Alternate Function mapping      $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+P\+I6}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I6 Alternate Function mapping      $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gad6e716ad894aa5299273541c6966864a}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+P\+I3}}~((uint8\+\_\+t)0x06)  /$\ast$ S\+P\+I3/I2\+S3 Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 6 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+A\+I1}~((uint8\+\_\+t)0x06)  /$\ast$ S\+A\+I1 Alternate Function mapping      $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_ga790e1f37e75f475cf09c211f566fb069}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+U\+S\+A\+R\+T1}}~((uint8\+\_\+t)0x07)  /$\ast$ U\+S\+A\+R\+T1 Alternate Function mapping  $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 7 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+U\+S\+A\+R\+T2}~((uint8\+\_\+t)0x07)  /$\ast$ U\+S\+A\+R\+T2 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+U\+S\+A\+R\+T3}~((uint8\+\_\+t)0x07)  /$\ast$ U\+S\+A\+R\+T3 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+I2\+S3ext}~((uint8\+\_\+t)0x07)  /$\ast$ I2\+S3ext Alternate Function mapping $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gad1754187e64b66681cc1447695062706}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+U\+A\+R\+T4}}~((uint8\+\_\+t)0x08)  /$\ast$ U\+A\+R\+T4 Alternate Function mapping  $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 8 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+U\+A\+R\+T5}~((uint8\+\_\+t)0x08)  /$\ast$ U\+A\+R\+T5 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+U\+S\+A\+R\+T6}~((uint8\+\_\+t)0x08)  /$\ast$ U\+S\+A\+R\+T6 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+U\+A\+R\+T7}~((uint8\+\_\+t)0x08)  /$\ast$ U\+A\+R\+T7 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+U\+A\+R\+T8}~((uint8\+\_\+t)0x08)  /$\ast$ U\+A\+R\+T8 Alternate Function mapping  $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gaf5defeedc302bf348e31dd7bdcdd882f}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+C\+A\+N1}}~((uint8\+\_\+t)0x09)  /$\ast$ C\+A\+N1 Alternate Function mapping  $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 9 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+C\+A\+N2}~((uint8\+\_\+t)0x09)  /$\ast$ C\+A\+N2 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M12}~((uint8\+\_\+t)0x09)  /$\ast$ T\+I\+M12 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M13}~((uint8\+\_\+t)0x09)  /$\ast$ T\+I\+M13 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+T\+I\+M14}~((uint8\+\_\+t)0x09)  /$\ast$ T\+I\+M14 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F9\+\_\+\+I2\+C2}~((uint8\+\_\+t)0x09)  /$\ast$ I2\+C2 Alternate Function mapping (Only for S\+T\+M32\+F401xx Devices) $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F9\+\_\+\+I2\+C3}~((uint8\+\_\+t)0x09)  /$\ast$ I2\+C3 Alternate Function mapping (Only for S\+T\+M32\+F401xx Devices) $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gaeba0aeefec841e505170efc7762ae588}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G\+\_\+\+FS}}~((uint8\+\_\+t)0xA)  /$\ast$ O\+T\+G\+\_\+\+FS Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 10 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G\+\_\+\+HS}~((uint8\+\_\+t)0xA)  /$\ast$ O\+T\+G\+\_\+\+HS Alternate Function mapping $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_ga26cf3f30fe5154bd461b27fab58e45e2}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+E\+TH}}~((uint8\+\_\+t)0x0B)  /$\ast$ E\+T\+H\+E\+R\+N\+ET Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 11 selection. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_ga8378a89ae1a16d5ae5d315ca49a57674}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+F\+S\+MC}}~((uint8\+\_\+t)0xC)  /$\ast$ F\+S\+MC Alternate Function mapping                     $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 12 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G\+\_\+\+H\+S\+\_\+\+FS}~((uint8\+\_\+t)0xC)  /$\ast$ O\+TG HS configured in FS, Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+S\+D\+IO}~((uint8\+\_\+t)0xC)  /$\ast$ S\+D\+IO Alternate Function mapping                     $\ast$/
+\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gaa7bfafac663bac5d437bd6d6a2f6774d}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+D\+C\+MI}}~((uint8\+\_\+t)0x0D)  /$\ast$ D\+C\+MI Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 13 selection. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_ga4a107e7ac82549bd9df715924c715f2e}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+L\+T\+DC}}~((uint8\+\_\+t)0x0E)  /$\ast$ L\+CD-\/T\+FT Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 14 selection. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gacd5e7846b3709cddbf41ece2b1fb068e}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+E\+V\+E\+N\+T\+O\+UT}}~((uint8\+\_\+t)0x0F)  /$\ast$ E\+V\+E\+N\+T\+O\+UT Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 15 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+AF}(AF)
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+Mode\+\_\+\+A\+IN}~\mbox{\hyperlink{group__GPIO_gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db}{G\+P\+I\+O\+\_\+\+Mode\+\_\+\+AN}}
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G1\+\_\+\+FS}~\mbox{\hyperlink{group__GPIO__Alternat__function__selection__define_gaeba0aeefec841e505170efc7762ae588}{G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G\+\_\+\+FS}}
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G2\+\_\+\+HS}~G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G\+\_\+\+HS
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G2\+\_\+\+FS}~G\+P\+I\+O\+\_\+\+A\+F\+\_\+\+O\+T\+G\+\_\+\+H\+S\+\_\+\+FS
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__GPIO_ga1347339e1c84a196fabbb31205eec5d4}{G\+P\+I\+O\+Mode\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group__GPIO_gga1347339e1c84a196fabbb31205eec5d4a484aa18a6156ce916049b334ba1839de}{G\+P\+I\+O\+\_\+\+Mode\+\_\+\+IN}} = 0x00, 
+\mbox{\hyperlink{group__GPIO_gga1347339e1c84a196fabbb31205eec5d4a60f1d530f4119efcad8e1a68c890c6a6}{G\+P\+I\+O\+\_\+\+Mode\+\_\+\+O\+UT}} = 0x01, 
+\mbox{\hyperlink{group__GPIO_gga1347339e1c84a196fabbb31205eec5d4a6d44c35c6c5008d85bac9251a867e701}{G\+P\+I\+O\+\_\+\+Mode\+\_\+\+AF}} = 0x02, 
+\mbox{\hyperlink{group__GPIO_gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db}{G\+P\+I\+O\+\_\+\+Mode\+\_\+\+AN}} = 0x03
+ \}
+\begin{DoxyCompactList}\small\item\em G\+P\+IO Configuration Mode enumeration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__GPIO_gae74212e8d66c389f47326b06bdf6d2ab}\label{group__GPIO_gae74212e8d66c389f47326b06bdf6d2ab}} 
+enum \mbox{\hyperlink{group__GPIO_gae74212e8d66c389f47326b06bdf6d2ab}{G\+P\+I\+O\+O\+Type\+\_\+\+Type\+Def}} \{ {\bfseries G\+P\+I\+O\+\_\+\+O\+Type\+\_\+\+PP} = 0x00, 
+{\bfseries G\+P\+I\+O\+\_\+\+O\+Type\+\_\+\+OD} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em G\+P\+IO Output type enumeration. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__GPIO_ga062ad92b67b4a1f301c161022cf3ba8e}{G\+P\+I\+O\+Speed\+\_\+\+Type\+Def}} \{ \mbox{\hyperlink{group__GPIO_gga062ad92b67b4a1f301c161022cf3ba8ea898ec2036718768d42e79afcb95ce5bf}{G\+P\+I\+O\+\_\+\+Low\+\_\+\+Speed}} = 0x00, 
+\mbox{\hyperlink{group__GPIO_gga062ad92b67b4a1f301c161022cf3ba8eaeed9485cfebba319947e3ef495e44371}{G\+P\+I\+O\+\_\+\+Medium\+\_\+\+Speed}} = 0x01, 
+\mbox{\hyperlink{group__GPIO_gga062ad92b67b4a1f301c161022cf3ba8ea91731d092dedee851773cea4698662e6}{G\+P\+I\+O\+\_\+\+Fast\+\_\+\+Speed}} = 0x02, 
+\mbox{\hyperlink{group__GPIO_gga062ad92b67b4a1f301c161022cf3ba8ea5b6a7186d45e9daebfc03b7a309162e8}{G\+P\+I\+O\+\_\+\+High\+\_\+\+Speed}} = 0x03
+ \}
+\begin{DoxyCompactList}\small\item\em G\+P\+IO Output Maximum frequency enumeration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__GPIO_gafb7ecd99c44b4fd702d669304a36c2c8}\label{group__GPIO_gafb7ecd99c44b4fd702d669304a36c2c8}} 
+enum \mbox{\hyperlink{group__GPIO_gafb7ecd99c44b4fd702d669304a36c2c8}{G\+P\+I\+O\+Pu\+Pd\+\_\+\+Type\+Def}} \{ {\bfseries G\+P\+I\+O\+\_\+\+Pu\+Pd\+\_\+\+N\+O\+P\+U\+LL} = 0x00, 
+{\bfseries G\+P\+I\+O\+\_\+\+Pu\+Pd\+\_\+\+UP} = 0x01, 
+{\bfseries G\+P\+I\+O\+\_\+\+Pu\+Pd\+\_\+\+D\+O\+WN} = 0x02
+ \}
+\begin{DoxyCompactList}\small\item\em G\+P\+IO Configuration Pull\+Up Pull\+Down enumeration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__GPIO_ga176130b21c0e719121470a6042d4cf19}\label{group__GPIO_ga176130b21c0e719121470a6042d4cf19}} 
+enum \mbox{\hyperlink{group__GPIO_ga176130b21c0e719121470a6042d4cf19}{Bit\+Action}} \{ {\bfseries Bit\+\_\+\+R\+E\+S\+ET} = 0, 
+{\bfseries Bit\+\_\+\+S\+ET}
+ \}
+\begin{DoxyCompactList}\small\item\em G\+P\+IO Bit S\+ET and Bit R\+E\+S\+ET enumeration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__GPIO_gaa60bdf3182c44b5fa818f237042f52ee}{G\+P\+I\+O\+\_\+\+De\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox)
+\begin{DoxyCompactList}\small\item\em De-\/initializes the G\+P\+I\+Ox peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_ga71abf9404261370d03cca449b88d3a65}{G\+P\+I\+O\+\_\+\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, \mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} $\ast$G\+P\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the G\+P\+I\+Ox peripheral according to the specified parameters in the G\+P\+I\+O\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_gab28de41278e7f8c63d0851e2733b10df}{G\+P\+I\+O\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} $\ast$G\+P\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each G\+P\+I\+O\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_gad2f2e615928c69fd0d8c641a7cedaafc}{G\+P\+I\+O\+\_\+\+Pin\+Lock\+Config}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Locks G\+P\+IO Pins configuration registers. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__GPIO_ga98772ef6b639b3fa06c8ae5ba28d3aaa}{G\+P\+I\+O\+\_\+\+Read\+Input\+Data\+Bit}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Reads the specified input port pin. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__GPIO_ga139a33adc8409288e9f193bbebb5a0f7}{G\+P\+I\+O\+\_\+\+Read\+Input\+Data}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox)
+\begin{DoxyCompactList}\small\item\em Reads the specified G\+P\+IO input data port. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__GPIO_ga138270f8695b105b7c6ed405792919c1}{G\+P\+I\+O\+\_\+\+Read\+Output\+Data\+Bit}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Reads the specified output data port bit. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__GPIO_gaf8938a34280b7dc3e39872a7c17bb323}{G\+P\+I\+O\+\_\+\+Read\+Output\+Data}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox)
+\begin{DoxyCompactList}\small\item\em Reads the specified G\+P\+IO output data port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_ga9e1352eed7c6620e18af2d86f6b6ff8e}{G\+P\+I\+O\+\_\+\+Set\+Bits}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Sets the selected data port bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_ga6fcd35b207a66608dd2c9d7de9247dc8}{G\+P\+I\+O\+\_\+\+Reset\+Bits}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Clears the selected data port bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_ga8f7b237fd744d9f7456fbe0da47a9b80}{G\+P\+I\+O\+\_\+\+Write\+Bit}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin, \mbox{\hyperlink{group__GPIO_ga176130b21c0e719121470a6042d4cf19}{Bit\+Action}} Bit\+Val)
+\begin{DoxyCompactList}\small\item\em Sets or clears the selected data port bit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_gaa925f19c8547a00c7a0c269a84873bf9}{G\+P\+I\+O\+\_\+\+Write}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t Port\+Val)
+\begin{DoxyCompactList}\small\item\em Writes data to the specified G\+P\+IO data port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_gac1b837c66258872740d5f89f23549ab1}{G\+P\+I\+O\+\_\+\+Toggle\+Bits}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Toggles the specified G\+P\+IO pins.. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO_ga0a77617a322562ae84f8d72486032c5d}{G\+P\+I\+O\+\_\+\+Pin\+A\+F\+Config}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin\+Source, uint8\+\_\+t G\+P\+I\+O\+\_\+\+AF)
+\begin{DoxyCompactList}\small\item\em Changes the mapping of the specified pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains all the functions prototypes for the G\+P\+IO firmware library. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+3.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08-\/November-\/2013 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2013 S\+T\+Microelectronics\end{center} }
+
+Licensed under M\+C\+D-\/\+ST Liberty SW License Agreement V2, (the \char`\"{}\+License\char`\"{}); You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: \begin{DoxyVerb}   http://www.st.com/software_license_agreement_liberty_v2
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

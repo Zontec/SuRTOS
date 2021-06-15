@@ -1,0 +1,9 @@
+########################### HELP ###########################
+
+Use make <option>:
+    os-info         - operating system information
+    usage           - how to use operating system
+    code-style      - code style of the project
+    os-arch         - operating system architecture
+
+############################################################

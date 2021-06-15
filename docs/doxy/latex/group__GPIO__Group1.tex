@@ -1,0 +1,124 @@
+\hypertarget{group__GPIO__Group1}{}\doxysection{Initialization and Configuration}
+\label{group__GPIO__Group1}\index{Initialization and Configuration@{Initialization and Configuration}}
+
+
+Initialization and Configuration.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__GPIO__Group1_gaa60bdf3182c44b5fa818f237042f52ee}{G\+P\+I\+O\+\_\+\+De\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox)
+\begin{DoxyCompactList}\small\item\em De-\/initializes the G\+P\+I\+Ox peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group1_ga71abf9404261370d03cca449b88d3a65}{G\+P\+I\+O\+\_\+\+Init}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, \mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} $\ast$G\+P\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the G\+P\+I\+Ox peripheral according to the specified parameters in the G\+P\+I\+O\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group1_gab28de41278e7f8c63d0851e2733b10df}{G\+P\+I\+O\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} $\ast$G\+P\+I\+O\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each G\+P\+I\+O\+\_\+\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__GPIO__Group1_gad2f2e615928c69fd0d8c641a7cedaafc}{G\+P\+I\+O\+\_\+\+Pin\+Lock\+Config}} (\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$G\+P\+I\+Ox, uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\begin{DoxyCompactList}\small\item\em Locks G\+P\+IO Pins configuration registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Initialization and Configuration. 
+
+\begin{DoxyVerb} ===============================================================================
+                 ##### Initialization and Configuration #####
+ ===============================================================================  \end{DoxyVerb}
+ ~\newline
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__GPIO__Group1_gaa60bdf3182c44b5fa818f237042f52ee}\label{group__GPIO__Group1_gaa60bdf3182c44b5fa818f237042f52ee}} 
+\index{Initialization and Configuration@{Initialization and Configuration}!GPIO\_DeInit@{GPIO\_DeInit}}
+\index{GPIO\_DeInit@{GPIO\_DeInit}!Initialization and Configuration@{Initialization and Configuration}}
+\doxysubsubsection{\texorpdfstring{GPIO\_DeInit()}{GPIO\_DeInit()}}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$}]{G\+P\+I\+Ox }\end{DoxyParamCaption})}
+
+
+
+De-\/initializes the G\+P\+I\+Ox peripheral registers to their default reset values. 
+
+\begin{DoxyNote}{Note}
+By default, The G\+P\+IO pins are configured in input floating mode (except J\+T\+AG pins). 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em G\+P\+I\+Ox} & where x can be (A..K) to select the G\+P\+IO peripheral for S\+T\+M32\+F405xx/407xx and S\+T\+M32\+F415xx/417xx devices x can be (A..I) to select the G\+P\+IO peripheral for S\+T\+M32\+F42xxx/43xxx devices. x can be (A, B, C, D and H) to select the G\+P\+IO peripheral for S\+T\+M32\+F401xx devices. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__GPIO__Group1_ga71abf9404261370d03cca449b88d3a65}\label{group__GPIO__Group1_ga71abf9404261370d03cca449b88d3a65}} 
+\index{Initialization and Configuration@{Initialization and Configuration}!GPIO\_Init@{GPIO\_Init}}
+\index{GPIO\_Init@{GPIO\_Init}!Initialization and Configuration@{Initialization and Configuration}}
+\doxysubsubsection{\texorpdfstring{GPIO\_Init()}{GPIO\_Init()}}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$}]{G\+P\+I\+Ox,  }\item[{\mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} $\ast$}]{G\+P\+I\+O\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Initializes the G\+P\+I\+Ox peripheral according to the specified parameters in the G\+P\+I\+O\+\_\+\+Init\+Struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G\+P\+I\+Ox} & where x can be (A..K) to select the G\+P\+IO peripheral for S\+T\+M32\+F405xx/407xx and S\+T\+M32\+F415xx/417xx devices x can be (A..I) to select the G\+P\+IO peripheral for S\+T\+M32\+F42xxx/43xxx devices. x can be (A, B, C, D and H) to select the G\+P\+IO peripheral for S\+T\+M32\+F401xx devices. ~\newline
+ \\
+\hline
+{\em G\+P\+I\+O\+\_\+\+Init\+Struct} & pointer to a \mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} structure that contains the configuration information for the specified G\+P\+IO peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__GPIO__Group1_gad2f2e615928c69fd0d8c641a7cedaafc}\label{group__GPIO__Group1_gad2f2e615928c69fd0d8c641a7cedaafc}} 
+\index{Initialization and Configuration@{Initialization and Configuration}!GPIO\_PinLockConfig@{GPIO\_PinLockConfig}}
+\index{GPIO\_PinLockConfig@{GPIO\_PinLockConfig}!Initialization and Configuration@{Initialization and Configuration}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PinLockConfig()}{GPIO\_PinLockConfig()}}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+Pin\+Lock\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__TypeDef}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$}]{G\+P\+I\+Ox,  }\item[{uint16\+\_\+t}]{G\+P\+I\+O\+\_\+\+Pin }\end{DoxyParamCaption})}
+
+
+
+Locks G\+P\+IO Pins configuration registers. 
+
+\begin{DoxyNote}{Note}
+The locked registers are G\+P\+I\+Ox\+\_\+\+M\+O\+D\+ER, G\+P\+I\+Ox\+\_\+\+O\+T\+Y\+P\+ER, G\+P\+I\+Ox\+\_\+\+O\+S\+P\+E\+E\+DR, G\+P\+I\+Ox\+\_\+\+P\+U\+P\+DR, G\+P\+I\+Ox\+\_\+\+A\+F\+RL and G\+P\+I\+Ox\+\_\+\+A\+F\+RH. 
+
+The configuration of the locked G\+P\+IO pins can no longer be modified until the next reset. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em G\+P\+I\+Ox} & where x can be (A..K) to select the G\+P\+IO peripheral for S\+T\+M32\+F405xx/407xx and S\+T\+M32\+F415xx/417xx devices x can be (A..I) to select the G\+P\+IO peripheral for S\+T\+M32\+F42xxx/43xxx devices. x can be (A, B, C, D and H) to select the G\+P\+IO peripheral for S\+T\+M32\+F401xx devices. \\
+\hline
+{\em G\+P\+I\+O\+\_\+\+Pin} & specifies the port bit to be locked. This parameter can be any combination of G\+P\+I\+O\+\_\+\+Pin\+\_\+x where x can be (0..15). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__GPIO__Group1_gab28de41278e7f8c63d0851e2733b10df}\label{group__GPIO__Group1_gab28de41278e7f8c63d0851e2733b10df}} 
+\index{Initialization and Configuration@{Initialization and Configuration}!GPIO\_StructInit@{GPIO\_StructInit}}
+\index{GPIO\_StructInit@{GPIO\_StructInit}!Initialization and Configuration@{Initialization and Configuration}}
+\doxysubsubsection{\texorpdfstring{GPIO\_StructInit()}{GPIO\_StructInit()}}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+Struct\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} $\ast$}]{G\+P\+I\+O\+\_\+\+Init\+Struct }\end{DoxyParamCaption})}
+
+
+
+Fills each G\+P\+I\+O\+\_\+\+Init\+Struct member with its default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G\+P\+I\+O\+\_\+\+Init\+Struct} & \+: pointer to a \mbox{\hyperlink{structGPIO__InitTypeDef}{G\+P\+I\+O\+\_\+\+Init\+Type\+Def}} structure which will be initialized. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

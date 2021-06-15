@@ -1,0 +1,54 @@
+\hypertarget{group__CMSIS__Core__DCBFunctions}{}\doxysection{Debug Control Functions}
+\label{group__CMSIS__Core__DCBFunctions}\index{Debug Control Functions@{Debug Control Functions}}
+
+
+Functions that access the Debug Control Block.  
+
+
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__CMSIS__Core__DIBFunctions}{Debug Identification Functions}}
+\begin{DoxyCompactList}\small\item\em Functions that access the Debug Identification Block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \mbox{\hyperlink{group__CMSIS__Core__NVICFunctions_ga8684eef21a32a624112814027635796b}{D\+C\+B\+\_\+\+Set\+Auth\+Ctrl}} (uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Set Debug Authentication Control Register. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__Core__NVICFunctions_gaf5c941317584778c1830125de083c23e}{D\+C\+B\+\_\+\+Get\+Auth\+Ctrl}} (void)
+\begin{DoxyCompactList}\small\item\em Get Debug Authentication Control Register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions that access the Debug Control Block. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__CMSIS__Core__NVICFunctions_gaf5c941317584778c1830125de083c23e}\label{group__CMSIS__Core__NVICFunctions_gaf5c941317584778c1830125de083c23e}} 
+\index{Debug Control Functions@{Debug Control Functions}!DCB\_GetAuthCtrl@{DCB\_GetAuthCtrl}}
+\index{DCB\_GetAuthCtrl@{DCB\_GetAuthCtrl}!Debug Control Functions@{Debug Control Functions}}
+\doxysubsubsection{\texorpdfstring{DCB\_GetAuthCtrl()}{DCB\_GetAuthCtrl()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE uint32\+\_\+t D\+C\+B\+\_\+\+Get\+Auth\+Ctrl (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Debug Authentication Control Register. 
+
+Reads Debug Authentication Control register. \begin{DoxyReturn}{Returns}
+Debug Authentication Control Register. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__CMSIS__Core__NVICFunctions_ga8684eef21a32a624112814027635796b}\label{group__CMSIS__Core__NVICFunctions_ga8684eef21a32a624112814027635796b}} 
+\index{Debug Control Functions@{Debug Control Functions}!DCB\_SetAuthCtrl@{DCB\_SetAuthCtrl}}
+\index{DCB\_SetAuthCtrl@{DCB\_SetAuthCtrl}!Debug Control Functions@{Debug Control Functions}}
+\doxysubsubsection{\texorpdfstring{DCB\_SetAuthCtrl()}{DCB\_SetAuthCtrl()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void D\+C\+B\+\_\+\+Set\+Auth\+Ctrl (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Set Debug Authentication Control Register. 
+
+writes to Debug Authentication Control register. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & value to be writen. \\
+\hline
+\end{DoxyParams}

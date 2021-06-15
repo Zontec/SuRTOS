@@ -1,0 +1,46 @@
+\hypertarget{stack_8c}{}\doxysection{sys/stack.c File Reference}
+\label{stack_8c}\index{sys/stack.c@{sys/stack.c}}
+
+
+S\+HA algorithm header file.  
+
+
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{stack_8c_a05c69f4478b83b32862c7be606022618}\label{stack_8c_a05c69f4478b83b32862c7be606022618}} 
+void {\bfseries stack\+\_\+init} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\item 
+\mbox{\Hypertarget{stack_8c_a362c99093288b5fc1016951679a8be78}\label{stack_8c_a362c99093288b5fc1016951679a8be78}} 
+void {\bfseries stack\+\_\+free} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\item 
+\mbox{\Hypertarget{stack_8c_a3a86f03cc524fc425566a214eda25bc0}\label{stack_8c_a3a86f03cc524fc425566a214eda25bc0}} 
+void {\bfseries stack\+\_\+push\+\_\+back} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack, const void $\ast$data)
+\item 
+\mbox{\Hypertarget{stack_8c_a95416a1b6aaef1aff886fbdfffe8566f}\label{stack_8c_a95416a1b6aaef1aff886fbdfffe8566f}} 
+void $\ast$ {\bfseries stack\+\_\+top} (const \mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\item 
+\mbox{\Hypertarget{stack_8c_ada2d46ded21cd4daf6bdee28a869234a}\label{stack_8c_ada2d46ded21cd4daf6bdee28a869234a}} 
+void $\ast$ {\bfseries stack\+\_\+pop} (\mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\item 
+\mbox{\Hypertarget{stack_8c_a07c2a739afe1c798ca7490461df79c99}\label{stack_8c_a07c2a739afe1c798ca7490461df79c99}} 
+uint32\+\_\+t {\bfseries stack\+\_\+size} (const \mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\item 
+\mbox{\Hypertarget{stack_8c_a640076db77b4a6071a7a16badd3d209d}\label{stack_8c_a640076db77b4a6071a7a16badd3d209d}} 
+uint32\+\_\+t {\bfseries stack\+\_\+capacity} (const \mbox{\hyperlink{structstack__t}{stack\+\_\+t}} $\ast$stack)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+S\+HA algorithm header file. 
+
+\begin{DoxyAuthor}{Author}
+Zontec 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021.\+04.\+04 
+\end{DoxyDate}

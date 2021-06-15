@@ -1,0 +1,13 @@
+########################### OS-INFO ###########################
+
+uROS - real time operating system, was created for education and
+research porouses. It has very small but complitly full micro kernel.
+OS kernel is very module and you can set up you own configuration. 
+Also project supports some cryptoalgorthims for education purposes.
+
+The project allows you to estimate efficensy of the different kernel 
+configuration on different platforms. It supports almost all modern 
+operating system algorithms. 
+
+
+###############################################################

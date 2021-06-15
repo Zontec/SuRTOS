@@ -1,0 +1,42 @@
+\hypertarget{group__CMSIS__Core__MveFunctions}{}\doxysection{M\+VE Functions}
+\label{group__CMSIS__Core__MveFunctions}\index{MVE Functions@{MVE Functions}}
+
+
+Function that provides M\+VE type.  
+
+
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__CMSIS__Core__SAUFunctions}{S\+A\+U Functions}}
+\begin{DoxyCompactList}\small\item\em Functions that configure the S\+AU. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE uint32\+\_\+t \mbox{\hyperlink{group__CMSIS__Core__NVICFunctions_ga9de35f6ff713a3cac7674baf49e22b72}{S\+C\+B\+\_\+\+Get\+M\+V\+E\+Type}} (void)
+\begin{DoxyCompactList}\small\item\em get M\+VE type \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Function that provides M\+VE type. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__CMSIS__Core__NVICFunctions_ga9de35f6ff713a3cac7674baf49e22b72}\label{group__CMSIS__Core__NVICFunctions_ga9de35f6ff713a3cac7674baf49e22b72}} 
+\index{MVE Functions@{MVE Functions}!SCB\_GetMVEType@{SCB\_GetMVEType}}
+\index{SCB\_GetMVEType@{SCB\_GetMVEType}!MVE Functions@{MVE Functions}}
+\doxysubsubsection{\texorpdfstring{SCB\_GetMVEType()}{SCB\_GetMVEType()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE uint32\+\_\+t S\+C\+B\+\_\+\+Get\+M\+V\+E\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+get M\+VE type 
+
+returns the M\+VE type \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\bfseries{0}}\+: No Vector Extension (M\+VE)
+\item {\bfseries{1}}\+: Integer Vector Extension (M\+V\+E-\/I)
+\item {\bfseries{2}}\+: Floating-\/point Vector Extension (M\+V\+E-\/F) 
+\end{DoxyItemize}
+\end{DoxyReturn}

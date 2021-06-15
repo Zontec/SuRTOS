@@ -1,0 +1,47 @@
+
+.PHONY: all link clean flash flash-only termdeps 
+.PHONY: term doc debug debug-server reset objdump help info-modules
+.PHONY: print-size elffile binfile hexfile flashfile
+
+################## Basic directories
+
+BOARDS_DIR  :=              $(OS_BASE_DIR)/boards/$(BOARD)
+include $(BOARDS_DIR)/Makefile
+
+#DRV_DIR :=                  $(OS_BASE_DIR)/drv/$(PLATFORM)
+INCLUDES_DIR :=             $(OS_BASE_DIR)/includes
+KERNEL_DIR :=               $(OS_BASE_DIR)/kernel
+LIBS_DIR :=                 $(OS_BASE_DIR)/libs
+PLATFORM_SPECIFIC_DIR :=    $(OS_BASE_DIR)/platform_specific/$(PLATFORM)
+SECURITY_DIR :=             $(OS_BASE_DIR)/security
+SHELL_DIR :=                $(OS_BASE_DIR)/shell
+SYS_DIR :=                  $(OS_BASE_DIR)/sys
+
+BUILD_DIR = $(CURDIR)/build/$(PLATFORM)
+
+
+
+
+#include $(DRV_DIR)/Makefile
+include $(KERNEL_DIR)/Makefile
+include $(LIBS_DIR)/$(LIB)/Makefile
+include $(PLATFORM_SPECIFIC_DIR)/Makefile
+include $(SECURITY_DIR)/Makefile
+include $(SHELL_DIR)/Makefile
+include $(SYS_DIR)/Makefile
+
+INCLUDES +=     $(BOARDS_DIR)/               \
+				$(DRV_DIR)/                  \
+				$(INCLUDES_DIR)/             \
+				$(KERNEL_DIR)/               \
+				$(LIBS_DIR)/$(LIB)/             \
+				$(PLATFORM_SPECIFIC_DIR)/    \
+				$(SECURITY_DIR)/             \
+				$(SHELL_DIR)/                \
+				$(SYS_DIR)/                  \
+				$(TESTS_DIR)/                
+
+VPATH += $(INCLUDES)
+
+-include $(OS_BASE_DIR)/Makefile.tools
+include $(OS_BASE_DIR)/Makefile.build

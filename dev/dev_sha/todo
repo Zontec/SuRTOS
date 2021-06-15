@@ -1,0 +1,26 @@
+==========DONE==========
+SHA1
+SHA256
+SHA512
+
+RAND
+
+HMAC_SHA1
+HMAC_SHA256
+HMAC_SHA512
+
+PBKDF2_HMAC_SHA1
+PBKDF2_HMAC_SHA256
+PBKDF2_HMAC_SHA512
+
+==========IN WORK==========
+
+AES
+
+==========To write=========
+
+BIGNUM
+
+RSA
+
+

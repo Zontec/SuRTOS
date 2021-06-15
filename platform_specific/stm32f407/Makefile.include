@@ -1,0 +1,2 @@
+FLASH_TOOL ?= /home/user/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI
+FLASH_TOOL_FLAGS ?= -c port=SWD -w

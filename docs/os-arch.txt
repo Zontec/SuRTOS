@@ -1,0 +1,21 @@
+########################### OS-ARCH ###########################
+
+uROS has the following architecture:
+
+--->   src
+    ---> core
+    ---> core_specific
+    ---> drivers
+    ---> services
+    ---> user
+--->   hal
+    ---> ...
+--->   doc
+--->   examples
+    ---> ...
+--->   product_specific
+    --->
+--->   sys
+--->   tests
+
+###############################################################

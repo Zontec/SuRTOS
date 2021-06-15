@@ -1,0 +1,95 @@
+\hypertarget{group__RCC__PLL__Clock__Source}{}\doxysection{R\+C\+C\+\_\+\+P\+L\+L\+\_\+\+Clock\+\_\+\+Source}
+\label{group__RCC__PLL__Clock__Source}\index{RCC\_PLL\_Clock\_Source@{RCC\_PLL\_Clock\_Source}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga1cbb1ae8d9e282a763a0070b251921f9}\label{group__RCC__PLL__Clock__Source_ga1cbb1ae8d9e282a763a0070b251921f9}} 
+\#define {\bfseries R\+C\+C\+\_\+\+P\+L\+L\+Source\+\_\+\+H\+SI}~((uint32\+\_\+t)0x00000000)
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga3706d0db7fe1836c65dc2ea7deded721}\label{group__RCC__PLL__Clock__Source_ga3706d0db7fe1836c65dc2ea7deded721}} 
+\#define {\bfseries R\+C\+C\+\_\+\+P\+L\+L\+Source\+\_\+\+H\+SE}~((uint32\+\_\+t)0x00400000)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+\_\+\+S\+O\+U\+R\+CE}(S\+O\+U\+R\+CE)
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga8db327c085e20aeb673a9784f8508597}\label{group__RCC__PLL__Clock__Source_ga8db327c085e20aeb673a9784f8508597}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+M\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((V\+A\+L\+UE) $<$= 63)
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga12835741fbedd278ad1e91abebe00837}\label{group__RCC__PLL__Clock__Source_ga12835741fbedd278ad1e91abebe00837}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+N\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((192 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 432))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gad808f83505f4e802e5bafab7831f0235}\label{group__RCC__PLL__Clock__Source_gad808f83505f4e802e5bafab7831f0235}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+P\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~(((V\+A\+L\+UE) == 2) $\vert$$\vert$ ((V\+A\+L\+UE) == 4) $\vert$$\vert$ ((V\+A\+L\+UE) == 6) $\vert$$\vert$ ((V\+A\+L\+UE) == 8))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gad66dbe75bf8ab2b64b200e796281a851}\label{group__RCC__PLL__Clock__Source_gad66dbe75bf8ab2b64b200e796281a851}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+Q\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((4 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 15))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gac30fb7f6fe9f22a7d6c5585909db5c3c}\label{group__RCC__PLL__Clock__Source_gac30fb7f6fe9f22a7d6c5585909db5c3c}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+I2\+S\+N\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((192 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 432))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gaa2fece4b24f6219b423e1b092b7705c8}\label{group__RCC__PLL__Clock__Source_gaa2fece4b24f6219b423e1b092b7705c8}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+I2\+S\+R\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((2 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 7))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gafedb34faed940069eb7485776e5875c5}\label{group__RCC__PLL__Clock__Source_gafedb34faed940069eb7485776e5875c5}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+I2\+S\+Q\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((2 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 15))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga400e5231409376eba690f252db7b2a19}\label{group__RCC__PLL__Clock__Source_ga400e5231409376eba690f252db7b2a19}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+N\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((192 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 432))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga505ad7125d7fbf79e8520912e4bbd761}\label{group__RCC__PLL__Clock__Source_ga505ad7125d7fbf79e8520912e4bbd761}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+Q\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((2 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 15))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga62ec96fd175b9eaa54709bf76f5a344b}\label{group__RCC__PLL__Clock__Source_ga62ec96fd175b9eaa54709bf76f5a344b}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+R\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((2 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 7))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gade1d727f609c44d4b13a57261edffaf9}\label{group__RCC__PLL__Clock__Source_gade1d727f609c44d4b13a57261edffaf9}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+\_\+\+D\+I\+V\+Q\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((1 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 32))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gac5c5714485768563fbfc6aafaf1084b7}\label{group__RCC__PLL__Clock__Source_gac5c5714485768563fbfc6aafaf1084b7}} 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+I2\+S\+\_\+\+D\+I\+V\+Q\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((1 $<$= (V\+A\+L\+UE)) \&\& ((V\+A\+L\+UE) $<$= 32))
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga61843bfd97c4bb40ccc9116bd7cfad4e}\label{group__RCC__PLL__Clock__Source_ga61843bfd97c4bb40ccc9116bd7cfad4e}} 
+\#define {\bfseries R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+Div\+R\+\_\+\+Div2}~((uint32\+\_\+t)0x00000000)
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gaadf28edb7192566f518f0ecaa756ba00}\label{group__RCC__PLL__Clock__Source_gaadf28edb7192566f518f0ecaa756ba00}} 
+\#define {\bfseries R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+Div\+R\+\_\+\+Div4}~((uint32\+\_\+t)0x00010000)
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga603497eb07550fdb590ce54c1963e140}\label{group__RCC__PLL__Clock__Source_ga603497eb07550fdb590ce54c1963e140}} 
+\#define {\bfseries R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+Div\+R\+\_\+\+Div8}~((uint32\+\_\+t)0x00020000)
+\item 
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga8cf39f72ca49f5057ee154cfaeafa1c1}\label{group__RCC__PLL__Clock__Source_ga8cf39f72ca49f5057ee154cfaeafa1c1}} 
+\#define {\bfseries R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+Div\+R\+\_\+\+Div16}~((uint32\+\_\+t)0x00030000)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+\_\+\+D\+I\+V\+R\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_ga8a8a84a16989bb4e5aca1af65ccf9a1b}\label{group__RCC__PLL__Clock__Source_ga8a8a84a16989bb4e5aca1af65ccf9a1b}} 
+\index{RCC\_PLL\_Clock\_Source@{RCC\_PLL\_Clock\_Source}!IS\_RCC\_PLL\_SOURCE@{IS\_RCC\_PLL\_SOURCE}}
+\index{IS\_RCC\_PLL\_SOURCE@{IS\_RCC\_PLL\_SOURCE}!RCC\_PLL\_Clock\_Source@{RCC\_PLL\_Clock\_Source}}
+\doxysubsubsection{\texorpdfstring{IS\_RCC\_PLL\_SOURCE}{IS\_RCC\_PLL\_SOURCE}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+\_\+\+S\+O\+U\+R\+CE(\begin{DoxyParamCaption}\item[{}]{S\+O\+U\+R\+CE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                   (((SOURCE) == RCC\_PLLSource\_HSI) || \(\backslash\)}
+\DoxyCodeLine{                                   ((SOURCE) == RCC\_PLLSource\_HSE))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{group__RCC__PLL__Clock__Source_gac6e3736031b122076e3831cc57da4efe}\label{group__RCC__PLL__Clock__Source_gac6e3736031b122076e3831cc57da4efe}} 
+\index{RCC\_PLL\_Clock\_Source@{RCC\_PLL\_Clock\_Source}!IS\_RCC\_PLLSAI\_DIVR\_VALUE@{IS\_RCC\_PLLSAI\_DIVR\_VALUE}}
+\index{IS\_RCC\_PLLSAI\_DIVR\_VALUE@{IS\_RCC\_PLLSAI\_DIVR\_VALUE}!RCC\_PLL\_Clock\_Source@{RCC\_PLL\_Clock\_Source}}
+\doxysubsubsection{\texorpdfstring{IS\_RCC\_PLLSAI\_DIVR\_VALUE}{IS\_RCC\_PLLSAI\_DIVR\_VALUE}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+\_\+\+D\+I\+V\+R\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{V\+A\+L\+UE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                        (((VALUE) == RCC\_PLLSAIDivR\_Div2) ||\(\backslash\)}
+\DoxyCodeLine{                                        ((VALUE) == RCC\_PLLSAIDivR\_Div4)  ||\(\backslash\)}
+\DoxyCodeLine{                                        ((VALUE) == RCC\_PLLSAIDivR\_Div8)  ||\(\backslash\)}
+\DoxyCodeLine{                                        ((VALUE) == RCC\_PLLSAIDivR\_Div16))}
+
+\end{DoxyCode}
