@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "queue.h": "c",
-        "string": "c",
-        "product_specific.h": "c",
-        "stack.h": "c"
-    }
-}

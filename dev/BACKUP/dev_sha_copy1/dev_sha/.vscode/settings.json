@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "sha512.h": "c",
-        "hmac.h": "c"
-    }
-}
