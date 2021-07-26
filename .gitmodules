@@ -1,0 +1,3 @@
+[submodule "mbedCrypto"]
+	path = mbedCrypto
+	url = https://github.com/Zontec/mbedCrypto
